@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
+import Introduction from "./Components/Introduction";
+import About from "./Components/About";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   return (
-    <div className="bg-[url('/Images/background.jpg')] bg-opacity-1 bg-fixed bg-cover bg-center">
-      <div className='text-white w-full h-screen'>
-        hello
-  </div>
-      <div className='text-white w-full h-screen'>
-        hello
-  </div>
-    </div>
-  )
-}
+    <div className="bg-[url('/Images/background.jpg')] bg-opacity-1 bg-fixed bg-cover bg-center font-Poppins ">
+      <Introduction />
+      <About/>
+   
 
-export default App
+    </div>
+  );
+}
+export default App;
