@@ -1,5 +1,5 @@
 import React from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { motion } from "framer-motion";
 
 // Reusable component for social media icons
 const SocialMediaIcon = ({ icon }) => (
@@ -12,14 +12,19 @@ const SocialMediaIcon = ({ icon }) => (
 
 function About() {
   return (
-    <div className="mt-20 flex">
+    <div className="mt-20 flex overflow-hidden">
       {/* Image */}
       <div className="overflow-hidden bg-cover bg-center mt-36">
         <img src="/Images/profile-pic.png" alt="Profile" />
       </div>
 
       {/* Text Content */}
-      <div className="ml-20">
+      <motion.div
+        className="ml-20"
+        initial={{ translateY: 80 }}
+        transition={{ duration: 2 }}
+        whileInView={{ translateY: 0 }}
+      >
         {/* Heading */}
         <h1 className="absolute text-white text-[180px] font-extrabold tracking-widest opacity-[0.2]">
           ABOUT
@@ -37,17 +42,33 @@ function About() {
 
           {/* Social Media Icons */}
           <div className="flex">
-            <SocialMediaIcon icon={{ name: "linkedin", link: "https://www.linkedin.com/in/shahid-khan-7a97051b8/" }} />
-            <SocialMediaIcon icon={{ name: "github", link: "https://github.com/Shahid0301" }} />
-            <SocialMediaIcon icon={{ name: "instagram", link: "https://www.instagram.com/shahid_0301/" }} />
+            <SocialMediaIcon
+              icon={{
+                name: "linkedin",
+                link: "https://www.linkedin.com/in/shahid-khan-7a97051b8/",
+              }}
+            />
+            <SocialMediaIcon
+              icon={{ name: "github", link: "https://github.com/Shahid0301" }}
+            />
+            <SocialMediaIcon
+              icon={{
+                name: "instagram",
+                link: "https://www.instagram.com/shahid_0301/",
+              }}
+            />
           </div>
-          
+
           {/* Link to Resume */}
-          <span className="text-3xl text-blue-500 mt-5">
-            <a href="link_to_your_resume">Checkout My Resume</a>
-          </span>
+          <a
+            href="/files/resume.pdf"
+            download
+            className="text-3xl text-blue-500 mt-5"
+          >
+            Download My Resume
+          </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
