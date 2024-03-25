@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import SkillList from "./SkillList";
 import { easeInOut, motion } from "framer-motion";
+import SkillProgress from "./SkillProgress";
 function SkillBox({ children, skill }) {
   return (
     <motion.div
-      className="w-1/3  "
+      className="w-2/6  "
       initial={{ opacity: 0 }}
       whileInView={{opacity: 1 }}
       transition={{ duration: 1, ease: "easeInOut" }}
@@ -26,8 +27,11 @@ function SkillBox({ children, skill }) {
       <h1 className="text-white text-7xl font-bold">{children}</h1>
 
       <ul className="mt-9">
-        <SkillList skill={skill} />
+      {skill.map((el) => (
+          <SkillProgress key={ el } skillName={el.name} percentage={el.percentage}/>
+        ))}
       </ul>
+      
     </motion.div>
   );
 }

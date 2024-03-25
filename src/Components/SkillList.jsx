@@ -1,11 +1,10 @@
+import SkillProgress from "./SkillProgress";
 
 function SkillList({ skill }) {
     return (
       <>
         {skill.map((el) => (
-          <li className="text-white text-4xl mt-10 list-disc" key={el}>
-            {el.toUpperCase()}
-          </li>
+          <SkillProgress key={ el } skillName={el} percentage={85}/>
         ))}
       </>
     );
