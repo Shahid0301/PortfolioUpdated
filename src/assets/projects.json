@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "NoteKeeping Website",
+    "image": "notekeeping",
+    "description": "Streamline your note-taking with our user-friendly website. Create, edit, and access your notes anytime, anywhere. Keep it simple, stay organized.",
+    "techStack": "Html, Css, JavaScript",
+    "link": "https://shahid0301.github.io/NoteKeepingWebsite/"
+  },
+  {
+    "id": 2,
+    "title": "Another Project",
+    "image": "/Images/anotherproject.jpg",
+    "description": "Description of another project",
+    "techStack": "Tech1, Tech2, Tech3",
+    "link": "https://example.com/anotherproject"
+  }
+]

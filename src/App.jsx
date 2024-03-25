@@ -4,6 +4,7 @@ import About from "./Components/About";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
+import ProjectSection from "./Components/ProjectSection";
 
 function App() {
   return (
@@ -12,7 +13,6 @@ function App() {
       <About/>
       <Skills />
       <Projects/>
-
     </div>
   );
 }
