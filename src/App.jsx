@@ -3,13 +3,15 @@ import Introduction from "./Components/Introduction";
 import About from "./Components/About";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
     <div className="bg-[url('/Images/background.jpg')] bg-opacity-1 bg-fixed bg-cover bg-center font-Poppins ">
       <Introduction />
       <About/>
-      <Skills/>
+      <Skills />
+      <Projects/>
 
     </div>
   );
