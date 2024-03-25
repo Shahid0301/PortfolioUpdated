@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import SkillBox from "./SkillBox";
 import SkillList from "./SkillList";
@@ -8,7 +8,7 @@ function Skills() {
   const backend = ["NodeJs", "ExpressJs", "MongoDB", "Mongoose"];
   const AdditionalSkill = ["Java", "data Structure and Algo", "git"];
   return (
-    <div className="w-full flex   mt-36 justify-around flex-wrap">
+    <div className="w-full flex   mt-20 justify-around flex-wrap">
       <h1 className="absolute  text-white text-[180px] font-extrabold tracking-widest opacity-[0.2]">
         SKILLS
       </h1>
