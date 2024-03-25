@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import SkillList from "./SkillList";
-import { easeInOut, motion } from "Framer-motion";
+import { easeInOut, motion } from "framer-motion";
 function SkillBox({ children, skill }) {
   return (
     <motion.div
