@@ -9,10 +9,26 @@
   },
   {
     "id": 2,
-    "title": "Another Project",
-    "image": "/Images/anotherproject.jpg",
-    "description": "Description of another project",
-    "techStack": "Tech1, Tech2, Tech3",
-    "link": "https://example.com/anotherproject"
+    "title": "Use PopCorn",
+    "image": "usepopcorn",
+    "description": "Experience an optimized movie tracking journey catering to users of all proficiency levels. Engage effortlessly with personalized ratings and insightful statistics, elevating your interaction with films. Seamlessly discover movies through real-time search functionality, ensuring a fluid and intuitive exploration process.",
+    "techStack": "Html, Css, JavaScript,ReactJs",
+    "link": "https://usepopcorn-bay.vercel.app/"
+  },
+  {
+    "id": 3,
+    "title": "Cravings Kitchen",
+    "image": "cravingkitchen",
+    "description": "Discover Cravings Kitchen's new website, your gateway to culinary bliss. Easily explore our menu and find your favorites with our intuitive search feature. Indulge in a seamless dining experience, right at your fingertips.",
+    "techStack": "Html, Css, JavaScript,ReactJs,Tailwind Css",
+    "link": "https://craving-kitechen.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "Weather App",
+    "image": "weather",
+    "description": "Welcome to our Weather App! Stay updated on real-time weather in any city. Simple, accurate, and easy to use—just search and get the latest updates. Plan your day with confidence, whether it's sun, rain, or snow. Download now for a well-prepared day, every day! Never be caught off guard by the weather—stay ahead with our Weather App!",
+    "techStack": "Html, Css, JavaScript",
+    "link": "https://shahid0301.github.io/WeatherApp/"
   }
 ]
