@@ -31,7 +31,7 @@ function About() {
           <h1 className="text-[3vw] text-white mb-20 phone:mb-9 phone:text-[6vw]">
             Hi! I'm Shahid khan
           </h1>
-          <div className="text-[2vw] text-subheading w-[50vw] tracking-widest text-balance phone:w-full phone:text-[4vw]">
+          <div className="text-[2vw] text-subheading w-[50vw] tracking-widest text-justify phone:w-full phone:text-[4vw]">
             An engineering student passionate about front-end development with
             React.js. I specialize in creating user-friendly web applications
             that blend form with function. Let's collaborate and create

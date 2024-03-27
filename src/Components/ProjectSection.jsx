@@ -15,14 +15,14 @@ function ProjectSection({ project }) {
       } phone:flex-col phone:mt-10`}
     >
       <motion.div
-        className="mx-20 relative group transition-opacity ease-in-out overflow-hidden"
+        className="mx-20 relative group transition-opacity ease-in-out overflow-hidden phone:mx-4"
           initial={initialAnimation1}
         whileInView={{ translateX: 0, opacity: 1 }}
         transition={{ duration: 1}}
       >
         <img
           src={`/Images/${project.image}.jpg`}
-          className="object-cover w-full h-[40vw] transition-transform duration-500 transform group-hover:scale-110 phone:w-[110vw]"
+          className="object-cover w-full h-[40vw] transition-transform duration-500 transform group-hover:scale-110 phone:h-[60vw]"
           alt="Notekeeping"
         />
         <div className="absolute inset-0 flex justify-center items-center bg-black/[0.3] invisible transition-all ease-in-out duration group-hover:visible">
@@ -34,13 +34,13 @@ function ProjectSection({ project }) {
         </div>
       </motion.div>
       <motion.div
-        className="flex flex-col mx-20 w-full text-balance text-wrap"
+        className="flex flex-col mx-20 w-full text-balance text-wrap phone:mx-4"
           initial={initialAnimation2}
         whileInView={{ translateX: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <h1 className="text-white text-[6vw] phone:mt-5">{project.title}</h1>
-        <div className="w-3/4 text-subheading text-[1.5vw] my-10 phone:text-[4vw]">
+        <div className="w-3/4 text-subheading text-justify text-[1.5vw] my-10 phone:text-[4vw] phone:w-[90%]">
           {project.description}
         </div>
         <div className="text-white">
