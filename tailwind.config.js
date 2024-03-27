@@ -12,7 +12,10 @@ export default {
       },
       fontFamily: {
         'Poppins':['Poppins']
-      }
+      },
+      screens: {
+        'phone': {'max': '575px'}, // Custom breakpoint for phones
+      },
     },
   },
   plugins: [],

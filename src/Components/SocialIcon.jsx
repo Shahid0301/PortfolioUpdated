@@ -19,7 +19,7 @@ function SocialIcon() {
 
 // Reusable component for social media icons
 const SocialMediaIcon = ({ icon }) => (
-  <span className="text-4xl text-blue-500 mt-5 bg-white/[0.1] p-5 rounded-full mr-8">
+  <span className="text-[3vw] text-blue-500 mt-5 bg-white/[0.1] p-3 px-7 rounded-full mr-8 phone:mr-2 phone:p-2 phone:px-5 phone:text-[8vw]">
     <a href={icon.link}>
       <i className={`fa-brands fa-${icon.name}`}></i>
     </a>

@@ -27,16 +27,16 @@ const backendSkills = [
   ];
   
   return (
-    <div id="skills" className="w-full flex   mt-20 justify-around flex-wrap">
-      <h1 className="absolute  text-white text-[180px] font-extrabold tracking-widest opacity-[0.2]">
+    <div id="skills" className="w-full flex   mt-20 justify-around flex-wrap phone:mt-5">
+      <h1 className="absolute  text-white text-[10vw] font-extrabold tracking-widest opacity-[0.2]">
         SKILLS
       </h1>
-      <div className="w-full mt-56  flex justify-around flex-wrap">
+      <div className="w-full mt-56  flex justify-around flex-wrap phone:mt-20">
         <SkillBox skill={frontendSkills}>FrontEnd</SkillBox>
         <SkillBox skill={backendSkills}>Backend</SkillBox>
       </div>
       <div className="w-[85%] mt-10">
-        <h1 className="text-white text-7xl font-bold">Additional</h1>
+        <h1 className="text-white text-[5vw] font-bold">Additional</h1>
         <ul className=" ">
         {additionalSkills.map((el) => (
           <SkillProgress key={ el } skillName={el.name} percentage={el.percentage}/>

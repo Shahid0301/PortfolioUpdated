@@ -7,13 +7,13 @@ import SkillProgress from "./SkillProgress";
 function SkillBox({ children, skill }) {
   return (
     <motion.div
-      className="w-2/6  "
+      className="w-2/6  relative"
       initial={{ opacity: 0 }}
       whileInView={{opacity: 1 }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <motion.h1
-        className="absolute  text-gray-600 text-[400px] font-extrabold opacity-[0.2]"
+        className="absolute   text-gray-600 text-[30vw] font-extrabold opacity-[0.2]"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.2 }}
         transition={{ duration: 2, ease: easeInOut }}
@@ -24,7 +24,7 @@ function SkillBox({ children, skill }) {
           <FontAwesomeIcon icon={faNodeJs} />
         )}
       </motion.h1>
-      <h1 className="text-white text-7xl font-bold">{children}</h1>
+      <h1 className="text-white text-[5vw] font-bold">{children}</h1>
 
       <ul className="mt-9">
       {skill.map((el) => (

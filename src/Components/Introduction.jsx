@@ -27,9 +27,9 @@ function Introduction() {
 
 
       
-    <motion.div id="home" className="w-full h-screen flex justify-center mb- items-end tracking-[12px] overflow-hidden">
+    <motion.div id="home" className="w-full h-screen flex justify-center mb- items-end tracking-[12px] overflow-hidden phone:items-center">
       <motion.div
-        className="text-center relative bottom-72"
+        className="text-center relative bottom-72 phone:bottom-20"
         variants={variants}
         initial="initial"
         animate="animate"
@@ -44,10 +44,10 @@ function Introduction() {
           transition={{ duration: 4 }}
           exit={true}
         >
-          <h1 className="text-subheading text-4xl mb-10">
+          <h1 className="text-subheading text-[3vw] mb-10">
             {introContent.subhead}
           </h1>
-          <h1 className="text-white text-8xl font-bold">{introContent.head}</h1>
+          <h1 className="text-white text-[6vw] font-bold">{introContent.head}</h1>
         </motion.div>
       </motion.div>
     </motion.div>

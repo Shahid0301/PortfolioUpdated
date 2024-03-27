@@ -8,10 +8,10 @@ function Navbar({ sections }) {
   };
 
   return (
-    <div id='navbar' className='w-full h-10 p-20 flex justify-between items-center'>
+    <div id='navbar' className='w-full h-10 p-20 flex justify-between items-center phone:px-10'>
       <div className='flex items-center'>
-        <img src='/Images/profile-pic.png' className='w-[5vw]' alt='Profile' />
-        <span className='text-white text-3xl mx-5'>Shahid Khan</span>
+        <img src='/Images/profile-pic.png' className='w-[7vw]' alt='Profile' />
+        <span className='text-white text-[3vw] mx-5'>SHAHID KHAN</span>
       </div>
       <div className='hamburger' onClick={handleClick}>
         <i className={clicked ? 'fas fa-times text-white text-3xl cursor-pointer' : 'fas fa-bars text-white text-3xl cursor-pointer'} />

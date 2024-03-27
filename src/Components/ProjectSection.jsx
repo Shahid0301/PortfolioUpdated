@@ -12,7 +12,7 @@ function ProjectSection({ project }) {
     <div
       className={`flex justify-evenly relative overflow-hidden mt-36 ${
         project.id % 2 === 0 ? "flex-row-reverse" : ""
-      }`}
+      } phone:flex-col phone:mt-10`}
     >
       <motion.div
         className="mx-20 relative group transition-opacity ease-in-out overflow-hidden"
@@ -22,7 +22,7 @@ function ProjectSection({ project }) {
       >
         <img
           src={`/Images/${project.image}.jpg`}
-          className="object-cover w-full h-[40vw] transition-transform duration-500 transform group-hover:scale-110"
+          className="object-cover w-full h-[40vw] transition-transform duration-500 transform group-hover:scale-110 phone:w-[110vw]"
           alt="Notekeeping"
         />
         <div className="absolute inset-0 flex justify-center items-center bg-black/[0.3] invisible transition-all ease-in-out duration group-hover:visible">
@@ -34,17 +34,17 @@ function ProjectSection({ project }) {
         </div>
       </motion.div>
       <motion.div
-        className="flex flex-col mx-20 w-full text-balance"
+        className="flex flex-col mx-20 w-full text-balance text-wrap"
           initial={initialAnimation2}
         whileInView={{ translateX: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-white text-8xl">{project.title}</h1>
-        <div className="w-3/4 text-subheading text-2xl my-10">
+        <h1 className="text-white text-[6vw] phone:mt-5">{project.title}</h1>
+        <div className="w-3/4 text-subheading text-[1.5vw] my-10 phone:text-[4vw]">
           {project.description}
         </div>
         <div className="text-white">
-          TechStack:<span className="mx-5 text-sub">{project.techStack}</span>
+          TechStack:<span className="mx-5 text-subheading text-wrap">{project.techStack}</span>
         </div>
         <a href={project.link} className="text-3xl text-blue-500 mt-5">
           View Project
