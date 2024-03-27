@@ -27,11 +27,11 @@ const backendSkills = [
   ];
   
   return (
-    <div className="w-full flex   mt-20 justify-around flex-wrap">
+    <div id="skills" className="w-full flex   mt-20 justify-around flex-wrap">
       <h1 className="absolute  text-white text-[180px] font-extrabold tracking-widest opacity-[0.2]">
         SKILLS
       </h1>
-      <div className="w-full mt-56  flex justify-around">
+      <div className="w-full mt-56  flex justify-around flex-wrap">
         <SkillBox skill={frontendSkills}>FrontEnd</SkillBox>
         <SkillBox skill={backendSkills}>Backend</SkillBox>
       </div>

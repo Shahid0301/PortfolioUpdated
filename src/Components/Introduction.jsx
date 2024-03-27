@@ -27,9 +27,9 @@ function Introduction() {
 
 
       
-    <motion.div className="w-full h-screen flex justify-center items-end tracking-[12px] overflow-hidden">
+    <motion.div id="home" className="w-full h-screen flex justify-center mb- items-end tracking-[12px] overflow-hidden">
       <motion.div
-        className="text-center relative bottom-36"
+        className="text-center relative bottom-72"
         variants={variants}
         initial="initial"
         animate="animate"

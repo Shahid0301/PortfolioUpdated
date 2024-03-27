@@ -1,19 +1,11 @@
 //about section
 
-import {motion} from 'framer-motion';
-
-// Reusable component for social media icons
-const SocialMediaIcon = ({ icon }) => (
-  <span className="text-4xl text-blue-500 mt-5 bg-white/[0.1] p-5 rounded-full mr-3">
-    <a href={icon.link}>
-      <i className={`fa-brands fa-${icon.name}`}></i>
-    </a>
-  </span>
-);
+import { motion } from "framer-motion";
+import SocialIcon from "./SocialIcon";
 
 function About() {
   return (
-    <div className="mt-20 flex overflow-hidden">
+    <div id="about" className="mt-20 flex overflow-hidden">
       {/* Image */}
       <div className="overflow-hidden bg-cover bg-center mt-36">
         <img src="/Images/profile-pic.png" alt="Profile" />
@@ -40,25 +32,7 @@ function About() {
             that blend form with function. Let's collaborate and create
             something amazing together!
           </div>
-
-          {/* Social Media Icons */}
-          <div className="flex">
-            <SocialMediaIcon
-              icon={{
-                name: "linkedin",
-                link: "https://www.linkedin.com/in/shahid-khan-7a97051b8/",
-              }}
-            />
-            <SocialMediaIcon
-              icon={{ name: "github", link: "https://github.com/Shahid0301" }}
-            />
-            <SocialMediaIcon
-              icon={{
-                name: "instagram",
-                link: "https://www.instagram.com/shahid_0301/",
-              }}
-            />
-          </div>
+          <SocialIcon />
 
           {/* Link to Resume */}
           <a

@@ -5,7 +5,7 @@ import ProjectSection from "./ProjectSection";
 
 function Projects() {
   return (
-    <div className="tracking-widest overflow-hidden">
+    <div id="portfolio" className="tracking-widest overflow-hidden">
       <div className="text-center h-[80%] m-72">
         <h2 className="text-subheading text-5xl">PORTFOLIO</h2>
         <h1 className="text-white text-8xl">Checkout a few of my works</h1>
