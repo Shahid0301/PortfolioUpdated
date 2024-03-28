@@ -1,3 +1,4 @@
+//Project Section
 import { motion } from "framer-motion";
 function ProjectSection({ project }) {
   const initialAnimation1 =
