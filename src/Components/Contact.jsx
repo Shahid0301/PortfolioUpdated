@@ -1,3 +1,4 @@
+//Contact Section
 import SocialIcon from "./SocialIcon";
 
 function Contact() {
